@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site web responsive</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a980e88be8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header-home">
+      <!-- menu -->
+      <header>
+        <div class="logo_link">
+            <a href="index.html" class="logo">DEC Maison</a>
+            <div class="menu_link">
+                <a href="index.html">Home</a>
+                <a href="service.html">Service</a>
+                <a href="Project.html">Project</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!-- responsive menu -->
+        <div class="sidebar" id="mySidebar">
+          <div class="closebtn" onclick="closeNav()">
+            <img src="images/close.png" />
+          </div>
+          <a href="index.html">Home</a>
+                <a href="service.html">Service</a>
+                <a href="Project.html">Project</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+          <a href="#">Login</a>
+          <a href="#">Sign up</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">
+            <img src="images/menu.png" />
+            Menu
+          </button>
+        </div>
+        <!-- responsive menu -->
+
+        <div class="link_buttons">
+          <a href="#">Login</a>
+          <a href="#" class="orange_link">Sign up</a>
+        </div>
+      </header>
+      <!-- menu -->
+    </section>
+    <!-- decoration -->
+    <section class="decoration">
+        <h1>Decoration list</h1>
+        <div class="deco-list">
+            <div class="deco">
+                <img src="images/deco1.jpg">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing. <br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+            <div class="deco">
+                <img src="images/deco4.png">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.<br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+            <div class="deco">
+                <img src="images/deco3.jpg">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.<br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+            <div class="deco">
+                <img src="images/deco4.png">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.<br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+            <div class="deco">
+                <img src="images/deco5.jpg">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.<br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+            <div class="deco">
+                <img src="images/deco6.jpg">
+                <p>decoration chamber</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.<br></span>
+                <button class="orange_link">Order the deco</button>
+            </div>
+        </div>
+    </section>
+     <!-- decoration -->
+    
+
+    <!-- decoration -->
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h1>DEC Maison</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cum. Vero, explicabo illum. Repudiandae.</p>
+            <h4>contact us</h4>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 Yassine Dev. Desighed by <span>yassine</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
