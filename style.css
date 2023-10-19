@@ -116,10 +116,14 @@ header .logo_link {
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .home .left p {
     margin: 25px 0;
+    padding-bottom: 20px;
+    padding-top: 25px ;
     color: #999;
     letter-spacing: 0.5px;
     line-height: 25px;
@@ -128,6 +132,7 @@ header .logo_link {
 .home .left .orange_link {
     width: fit-content;
     padding: 12px 50px;
+
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -144,9 +149,7 @@ header .logo_link {
 }
 
 .statistiques {
-    position: absolute;
-    bottom: -80px;
-    height: 100px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,6 +157,14 @@ header .logo_link {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px 10%;
+    border-radius: 30%;
+}
+
+.statistiq {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #e4e3e0;
 }
 
 .statistiques span {
@@ -196,22 +207,28 @@ header .logo_link {
 }
 
 .about .content {
-    width: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .about .content h1 {
     margin: 16px 0;
+    margin-right: 50px;
 }
 
 .about .content h2 {
-    margin: 15px 0;
+    margin: 15px 10px;
     color: #333;
 }
 
 .about .content p {
     color: #999;
     text-align: justify;
-    letter-spacing: 0.5px;
+    margin-right: 40px;
     line-height: 25px;
 }
 
@@ -648,6 +665,7 @@ hr {
     background: none;
     border: none;
     cursor: pointer;
+    color: #000;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -655,4 +673,56 @@ hr {
 .answer {
     display: none;
     padding-bottom: 50px;
+}
+
+/*login*/
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e3e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin: 0 0 20px;
+}
+
+.login-container  label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+#login-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-container  input {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-container  button {
+    width: 250px;
+    background-color: #f26440;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-container .error-message {
+    color: red;
+    margin: 10px 0;
 }

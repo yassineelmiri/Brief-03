@@ -29,3 +29,22 @@ questionButtons.forEach(button => {
         }
     });
 });
+//logine
+document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('login-form');
+    const errorMessage = document.getElementById('error-message');
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'yassine' && password === '0000') {
+            // Redirigez l'utilisateur vers la page d'accueil ou effectuez d'autres actions
+            window.location.href = 'index.html';
+        } else {
+            errorMessage.textContent = 'Nom d\'utilisateur ou mot de passe incorrect.';
+        }
+    });
+});
+
