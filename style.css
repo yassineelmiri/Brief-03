@@ -71,9 +71,7 @@ header .logo_link {
 
 .menu_link a:hover {
     color: #f26440;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 5px 5px;
+
     transform: scale(1.1);
 }
 
@@ -146,6 +144,21 @@ header .logo_link {
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     object-fit: cover;
+}
+
+    
+
+.right img:hover {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.right img:hover::after {
+    content: " Delectus nulla doloribus iusto nemo! Maiores nam sint eveniet qui consequuntur quod minima omnis libero voluptates sapiente aliquid soluta, consequatur itaque illum.";
+    position: absolute;
+
 }
 
 .statistiques {
@@ -651,22 +664,25 @@ hr {
     width: 100%;
     background-color: #e4e3e0;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     text-align: left;
 }
 
 .faq-list {
     list-style: none;
     text-align: center;
-    padding: 100px;
+    background-color: #382f2c54;
+    border-radius: 15px;
+    padding-top: 50px;
 }
 
 .question-button {
     background: none;
     border: none;
     cursor: pointer;
-    color: #000;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 1.2em;
     margin-bottom: 30px;
 }
 
@@ -682,7 +698,7 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: #e4e3e0;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
