@@ -38,12 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
-
-        if (username === 'yassine' && password === '0000') {
+        if( '00000000' <= password ){
+        if (username === 'yassine' && password === '00000000') {
             // Redirigez l'utilisateur vers la page d'accueil ou effectuez d'autres actions
             window.location.href = 'index.html';
         } else {
             errorMessage.textContent = 'Nom d\'utilisateur ou mot de passe incorrect.';
+        }}
+        else {
+            errorMessage.textContent = 'mot de passe inf de 8 caracter.'
         }
     });
 });
