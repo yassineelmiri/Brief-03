@@ -65,10 +65,16 @@
       <form action="https://formsubmit.co/miriyassine123@gmail.com" method="POST">
         <div class="left-right">
           <div class="left">
-            <label>Nom Complet</label>
-            <input class="envo" type="text" placeholder="nom" required/>
+            
+
+            <label for="usernam">Nom Complet</label>
+            <input type="text" id="usernam" name="usernam" placeholder="nom" required />
+
+            <p id="resultat"></p>
+
             <label>Objet</label>
-            <input class="envo" type="text" placeholder="objet" required/>
+            <input class="envo" type="text" placeholder="objet" required onclick="verifierNonTexte()"/>
+            
             <label>Email</label>
             <input class="envo" type="email" placeholder="email" required/>
             <label>Message</label>
@@ -83,9 +89,9 @@
           </div>
           <div class="right">
             <label>Numéro</label>
-            <input class="envo" type="text" placeholder="Numero telephone" required/>
-            <label>Date</label>
-            <input class="envo" type="number" placeholder="jj - mm - aaaa" required/>
+            <input class="envo" type="text" placeholder="Numero telephone" required maxlength="10"/>
+            <label for="time">Date</label>
+            <input class="envo" type="datetime-local"  required/>
             <label>Autres Details</label>
             <input class="envo" type="text" placeholder="Details" required/>
             <label>Adresse</label>
@@ -99,7 +105,7 @@
             ></iframe>
           </div>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="submit" >Envoyer</button>
       </form>
     </section>
 

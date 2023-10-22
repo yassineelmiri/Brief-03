@@ -29,6 +29,7 @@ questionButtons.forEach(button => {
         }
     });
 });
+
 //logine
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('login-form');
@@ -46,16 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage.textContent = 'Nom d\'utilisateur ou mot de passe incorrect.';
         }}
         else {
-            errorMessage.textContent = 'mot de passe inf de 8 caracter.'
+            errorMessage.textContent = 'mot de passe inf de 8 caracter.';
         }
     });
 });
 
 /*contact */
-var varelement = document.getElementsByClassName("envo");
-
-console.log(varelement.length);
-
-
-
-
+function verifierNonNombre() {
+    // Récupérez la valeur entrée par l'utilisateur
+    var valeur = document.getElementById("usernam").value;
+    var pattern = /^\d+$/;
+    alert("valeur");
+    // Utilisez isNaN() pour vérifier si la valeur n'est pas un nombre
+    if (pattern.test(valeur)) {
+        document.getElementById("resultat").textContent = "La valeur ne contient pas de texte.";
+    } else {
+        document.getElementById("resultat").textContent = "La valeur contient du texte.";
+    }
+}

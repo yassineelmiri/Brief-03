@@ -467,7 +467,7 @@ textarea {
 }
 
 #contact form input:focus, textarea:focus {
-    border: 1px solid #29d9d5;
+    border: 2px solid #29d94f;
 }
 
 iframe {
