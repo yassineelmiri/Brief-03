@@ -53,15 +53,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*contact */
-function verifierNonNombre() {
+function verifierNonTexte() {
     // Récupérez la valeur entrée par l'utilisateur
-    var valeur = document.getElementById("usernam").value;
-    var pattern = /^\d+$/;
-    alert("valeur");
-    // Utilisez isNaN() pour vérifier si la valeur n'est pas un nombre
-    if (pattern.test(valeur)) {
-        document.getElementById("resultat").textContent = "La valeur ne contient pas de texte.";
-    } else {
+    var usernam = document.getElementById("usernam").value;
+
+    // Utilisez une expression régulière pour vérifier si la valeur ne contient que des chiffres (et éventuellement d'autres caractères non alphabétiques)
+    
+    if (isNaN(usernam)) {
         document.getElementById("resultat").textContent = "La valeur contient du texte.";
+        
+    } else {
+        
+        document.getElementById("resultat").textContent = "La valeur ne contient pas de texte.";
+
     }
 }
