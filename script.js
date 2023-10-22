@@ -60,11 +60,11 @@ function verifierNonTexte() {
     // Utilisez une expression régulière pour vérifier si la valeur ne contient que des chiffres (et éventuellement d'autres caractères non alphabétiques)
     
     if (isNaN(usernam)) {
-        document.getElementById("resultat").textContent = "La valeur contient du texte.";
+        
         
     } else {
-        
-        document.getElementById("resultat").textContent = "La valeur ne contient pas de texte.";
 
+        document.getElementById("resultat").textContent = "La valeur ne contient pas de texte.";
+   
     }
 }
