@@ -16,7 +16,7 @@
       <!-- menu -->
       <header>
         <div class="logo_link">
-          <img src="Design sans titre (1).png" alt="logo">
+          <img src="Design sans titre (1).png" alt="logo" />
           <a href="index.html" class="logo"
             ><span class="decora">DEC</span> Maison</a
           >
@@ -62,25 +62,32 @@
     <!--  contact section -->
     <section id="contact">
       <h1 class="title">Contact</h1>
-      <form action="">
+      <form action="https://formsubmit.co/miriyassine123@gmail.com" method="POST">
         <div class="left-right">
           <div class="left">
             <label>Nom Complet</label>
-            <input type="text" />
+            <input class="envo" type="text" placeholder="nom" required/>
             <label>Objet</label>
-            <input type="text" />
+            <input class="envo" type="text" placeholder="objet" required/>
             <label>Email</label>
-            <input type="text" />
+            <input class="envo" type="email" placeholder="email" required/>
             <label>Message</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
           </div>
           <div class="right">
             <label>Numéro</label>
-            <input type="text" />
+            <input class="envo" type="text" placeholder="Numero telephone" required/>
             <label>Date</label>
-            <input type="text" />
+            <input class="envo" type="number" placeholder="jj - mm - aaaa" required/>
             <label>Autres Details</label>
-            <input type="text" />
+            <input class="envo" type="text" placeholder="Details" required/>
             <label>Adresse</label>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13489.805223731948!2d-9.24399235!3d32.299727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac212a768decd3%3A0x491fe311d960d6c8!2z2YPYp9ix2YHZiNixINmF2KfYsdmD2Ko!5e0!3m2!1sar!2sma!4v1697709414737!5m2!1sar!2sma"
@@ -92,7 +99,7 @@
             ></iframe>
           </div>
         </div>
-        <button>Envoyer</button>
+        <button type="submit">Envoyer</button>
       </form>
     </section>
 
