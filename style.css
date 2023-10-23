@@ -121,7 +121,7 @@ header .logo_link {
 .home .left p {
     margin: 25px 0;
     padding-bottom: 20px;
-    padding-top: 25px ;
+    padding-top: 25px;
     color: #999;
     letter-spacing: 0.5px;
     line-height: 25px;
@@ -144,7 +144,9 @@ header .logo_link {
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     object-fit: cover;
-}.statistiques {
+}
+
+.statistiques {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +154,7 @@ header .logo_link {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px 10%;
-    border-radius: 30%;
+
 }
 
 .statistiq {
@@ -695,18 +697,19 @@ hr {
     margin: 0 0 20px;
 }
 
-.login-container  label {
+.login-container label {
     display: block;
     margin: 10px 0;
     text-align: left;
 }
+
 #login-form {
     display: flex;
     flex-direction: column;
 
 }
 
-.login-container  input {
+.login-container input {
     width: 300px;
     padding: 10px;
     margin: 5px 0;
@@ -714,7 +717,7 @@ hr {
     border-radius: 10px;
 }
 
-.login-container  button {
+.login-container button {
     width: 250px;
     background-color: #f26440;
     color: #fff;

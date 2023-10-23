@@ -72,9 +72,9 @@
             <label for="usernam">Nom Complet</label>
             <input
               type="text"
-              id="usernam"
               name="usernam"
               placeholder="nom"
+              class="envo"
               required
             />
             <p id="resultat"></p>
@@ -91,7 +91,14 @@
             />
 
             <label>Email</label>
-            <input class="envo" type="email" placeholder="email" required />
+            <input
+              class="envo"
+              id="valid"
+              type="email"
+              placeholder="email"
+              required
+            />
+            <p id="resultatemail"></p>
             <label>Message</label>
             <textarea
               name="message"
@@ -99,6 +106,7 @@
               cols="30"
               rows="10"
               placeholder="Message"
+              class="envo"
               required
             ></textarea>
           </div>
@@ -106,7 +114,7 @@
             <label>Numéro</label>
             <input
               class="envo"
-              type="text"
+              type="number"
               placeholder="Numero telephone"
               required
               maxlength="10"
