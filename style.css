@@ -509,7 +509,7 @@ iframe {
         display: none;
     }
 
-    /*responsive menu*/
+    
     .sidebar, #main {
         display: block;
     }
@@ -579,7 +579,7 @@ iframe {
 
 }
 
-@media (max-width:588px) {
+/*@media (max-width:588px) {
     h1 {
         font-size: 30px;
     }
@@ -624,7 +624,7 @@ iframe {
         width: 100%;
     }
 
-    /*Why us*/
+    
     .list_box, .deco-list {
         display: flex;
         flex-direction: column;
@@ -634,7 +634,7 @@ iframe {
     .box, .deco {
         width: 100%;
     }
-}
+}*/
 
 hr {
     width: 50%;
